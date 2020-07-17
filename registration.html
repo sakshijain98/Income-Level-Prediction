@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registration Form</title>
+		<style>
+			*{margin:0px;
+			  padding:0px;
+			 }
+			.register{
+					  background:#2d85b0;
+					  width:500px;
+					  margin:30px 0px 0px 430px;
+					  color:white;
+					  font-size:18px;
+					  padding:20px;
+					  border-radius:20px;
+					 }
+			h1{
+				text-align:center;
+				padding:20px;
+			   }
+			#register{
+				margin-left:50px;
+					 }
+			label{
+				  color:white:
+				  font-family:sans-serif;
+				  font-style:italic;
+				  font-size:20px;
+				 }
+			#name{
+				  width:370px;
+				  border:none;
+				  border-radius:10px;
+				  outline:0;
+				  padding:7px;
+				  
+				 }
+			#number{
+				    width:305px;
+					border-radius:10px;
+					border:none;
+					outline:0;
+					padding:7px;
+					}
+			#select{
+					width:60px;
+					border-radius:10px;
+					padding:7px;
+					outline:0;
+					border:none;
+				   }
+			#email{
+				    width:370px;
+					padding:7px;
+					border-radius:10px;
+					outline:o;
+					border:none;
+				  }
+			#password{
+					  width:370px;
+					  padding:7px;
+					  border-radius:10px;
+					  outline:0;
+					  border:none;
+					 }
+			#sub{
+				 padding:8px;
+				 border-radius:10px;
+				 width:380px;
+				 border:none;
+				 outline:o;
+				 font-size:25px;
+				 font-weight:bold;
+				 background:lightgreen;
+				}
+			#sub:hover{
+					   background:green;
+					   }
+				  
+		</style>
+	</head>
+	<body>
+		<div class="register">
+		<h1>Register Here</h1></br>
+		<form method="post" id="register" action="">
+			<label>Name:</label></br>
+			<input type="text" name="Fname" id="name" placeholder="Enter your name"></br></br>
+			<label>Username:</label></br>
+			<input type="text" name="Lname" id="name" placeholder="Enter your username"></br></br>
+			<label>Mobile Number:</label></br>
+			<select id="select">
+			<option>+91</option>
+			<option>+92</option>
+			<option>+93</option>
+			<option>+94</option>
+			<option>+95</option>
+			</select>
+			<input type="number" name="Mno" id="number" placeholder="Enter your  mobile number"></br></br>
+			<label>Email id:</label></br>
+			<input type="email" name="email" id="email" placeholder="Enter your Email-id"></br></br>
+			<label>Password:</label></br>
+			<input type="password" name="password" id="password" placeholder="Enter your Password"></br></br>
+			<label>Re-enter Password:</label></br>
+			<input type="password" name="password" id="password" placeholder="Re-enter your Password"></br></br>
+			<label>Gender:</label></br>
+			<input type="radio" name="radio" id="radio">male
+			<input type="radio" name="radio" id="radio">female</br></br>
+			<input type="submit" value="submit" id="sub">
+		</form>
+		</div>
+	</body>
+</html>

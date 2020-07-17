@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Login Form</title>
+	<style>
+		body{
+	margin:0px;
+	paddind:0px;
+	font-family:sans-serif;
+	background-size:1422px 700px;}
+	.box{
+		background: rgba(0,0,0,.5);
+		color:#fff;
+		width:320px;
+		height:420px;
+		top:50%;
+		left:50%;
+		transform:translate(-50%,-50%);
+		box-sizing:absolute;
+		padding:70px 30px;
+		float:right;
+		margin:25%;
+		}
+	.userimg{
+		width:100px;
+		height:100px;
+		border-radius:50%;
+		overflow:hidden;
+		position:absolute;
+		top:calc(-100px/2);
+		left:calc(50% -50px);
+		}
+	h2{
+		
+		font-size:22px;
+		}
+	.box input{
+				width:100%;
+				margin-bottom:20px;
+			   }
+	.box input[type="text"],input[type="password"]
+	{
+		border:none;
+		border-bottom:1px solid #fff;
+		background:transparent;
+		outline:none;
+		height:40px;
+		color:white;
+	}
+	.box input[type="submit"]
+	{
+		border:none;
+		outline:none;
+		height:40px;
+		background:red;
+		color:white;
+		font-size:18px;
+		border-radius:20px;
+	}
+	.box input[type="submit"]:hover
+	{
+		cursor:pointer;
+		background:yellow;
+		color:#000;
+	}
+	.box a
+	{
+		text-decoration:none;
+		font-size:12px;
+		line-height:20px;
+		color:darkgrey;
+	}
+	.box a:hover
+	{
+		color:red;
+	}
+	</style>
+	</head>
+	<script type="text/javascript">
+		function validate()
+	{
+		var result=true;
+		var e=document.getElementsByName("email")[0].value;
+		var atindex=e.indexOf('@');
+		var dotindex=e.lastIndexOf('.');
+		if(atindex<1 || dotindex>=e.length-2|| dotindex-atindex<3)
+			result=false;
+		return(result);
+	}
+		
+	</script>
+	<body background="login.jpg">
+		<div class="box"><div class="userimg">
+			<img scr="C:\Users\KARAN\Downloads\login1.png"></div>
+		<h2>Login Here</h2>
+		<form  method="post"  name="login" onsubmit="return validate()" action="insert.php">
+			<p>Email_id</p>
+			<input type="text" value="" placeholder="Enter Email" width="100%" name="email" required>
+			<span id=message> </span>
+			<p>Password</p>
+			<input type="password" name="" placeholder="Enter Password" name="password" id="password" required></br></br>
+			<input type="submit" value="Login"></br></br>
+			<a href="C:\Users\KARAN\Desktop\forget_password.html">Forget Password</a></br></br>
+			<a href="registration.html">Don't have an account</a>
+		</form>
+		</div>
+	</body>
+</html>

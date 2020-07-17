@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Login Form</title>
+	<style>
+		body{
+	margin:0px;
+	paddind:0px;
+	font-family:sans-serif;
+	background-size:1422px 700px;}
+	.box{
+		background: rgba(0,0,0,.5);
+		color:#fff;
+		width:320px;
+		height:420px;
+		top:50%;
+		left:50%;
+		transform:translate(-50%,-50%);
+		box-sizing:absolute;
+		padding:70px 30px;
+		float:right;
+		margin:25%;
+		}
+	.userimg{
+		width:100px;
+		height:100px;
+		border-radius:50%;
+		overflow:hidden;
+		position:absolute;
+		top:calc(-100px/2);
+		left:calc(50% -50px);
+		}
+	h2{
+		
+		font-size:22px;
+		}
+	.box input{
+				width:100%;
+				margin-bottom:20px;
+			   }
+	.box input[type="text"],input[type="password"]
+	{
+		border:none;
+		border-bottom:1px solid #fff;
+		background:transparent;
+		outline:none;
+		height:40px;
+		color:white;
+	}
+	.box input[type="submit"]
+	{
+		border:none;
+		outline:none;
+		height:40px;
+		background:red;
+		color:white;
+		font-size:18px;
+		border-radius:20px;
+	}
+	.box input[type="submit"]:hover
+	{
+		cursor:pointer;
+		background:yellow;
+		color:#000;
+	}
+	.box a
+	{
+		text-decoration:none;
+		font-size:12px;
+		line-height:20px;
+		color:darkgrey;
+	}
+	.box a:hover
+	{
+		color:red;
+	}
+	<script type="text/javascript">
+
+function checkEmail() {
+
+    var email = document.getElementById('txtEmail');
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+    if (!filter.test(email.value)) {
+    alert('Please provide a valid email address');
+    email.focus;
+    return false;
+ }	
+	}
+	</script>
+	</style>
+	</head>
+	<body background="login.jpg">
+		<div class="box"><div class="userimg">
+			<img scr="C:\Users\KARAN\Downloads\login1.png"></div>
+		<h2>Login Here</h2>
+		<form action="index.html" method="post" >
+			<p>Email_id</p>
+			<input type="text" name="" placeholder="Enter Email" width="100%" id="txtEmail" onsubmit="return checkEmail()">
+			<p>Password</p>
+			<input type="password" name="" placeholder="Enter Password" name="password"></br></br>
+			<input type="submit" value="Login"></br></br>
+			<a href="C:\Users\KARAN\Desktop\forget_password.html">Forget Password</a></br></br>
+			<a href="registration.html">Don't have an account</a>
+		</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    
+    <title>Document</title>
+    <style>
+		*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold; 
+}
+
+.container{
+    display: flex;
+}
+
+.container .col{
+    flex: 33%;
+    max-width: 33%;
+    padding: 0.5%;
+    box-sizing: border-box;
+
+}
+
+.box{
+    position:relative;
+	heigth:450px;
+	width:450px;
+}
+
+
+img{
+    width: 100%;
+    position: relative;
+    transition: 0.2s ease-in;
+    backface-visibility: hidden;
+    
+   
+}
+
+.box span{
+    display: inline-block;
+    background:none;
+    padding: 10px 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+	
+    
+}
+
+.box:hover img{
+    opacity: 0.4;
+}
+
+
+.box:hover span{
+    opacity: 1;
+}
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="col">
+        <div class="box"><a href="hii.html">
+            <img src="project\indian2.jpg"></a>
+            <span>Indian</span>
+        </div>
+        <div class="box">
+                <img src="project\maxican.jpg">
+                <span>Maxican</span>
+        </div>
+        <div class="box">
+                <img src="project\italian1.jpg">
+                <span>Italian</span>
+        </div>
+       
+    </div>
+    <div class="col">
+            <div class="box">
+                <img src="project\chienese.jpg">
+                <span>Chienese</span>
+            </div>
+            <div class="box">
+                    <img src="project\french.jpg">
+                    <span>French Food</span>
+            </div>
+            <div class="box">
+                    <img src="project\japanese.jpg">
+                    <span>Japanese</span>
+            </div>
+            
+    </div>
+    <div class="col">
+            <div class="box">
+                <img src="project\spanish.jpg">
+                <span>Spanish</span>
+            </div>
+            <div class="box">
+                    <img src="project\american.jpg">
+                    <span>American</span>
+            </div>
+            <div class="box">
+                    <img src="project\australian.jpg">
+                    <span>Australian</span>
+            </div>
+            
+    </div>
+
+</div>
+</body>
+</html>
